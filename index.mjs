@@ -7,6 +7,26 @@ const port = process.env.port || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// GET root
+app.get('/', (req, res) => {
+  res.send(` <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Basic Node API Server</title>
+    </head>
+    <body>
+      <h2>
+       Try below endpoint
+      </h2>
+      <ul>
+        <li>
+          Single/Name
+        </li>
+      </ul>
+    </body>
+  </html>`);
+});
+
 // GET request with single parameter
 app.get('/single/:name', (req, res) => {
   const { name } = req.params;
