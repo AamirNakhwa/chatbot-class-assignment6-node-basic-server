@@ -71,5 +71,3 @@ app.post('/upload-multiple-json', upload.array('files', 2), (req, res) => {
 app.listen(port, () => {
   console.log('Server listening on port ${port}');
 });
-
-export default app;
