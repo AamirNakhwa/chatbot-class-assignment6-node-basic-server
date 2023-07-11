@@ -1,5 +1,5 @@
 { 
-     "version": 1, 
+     "version": 2, 
      "name": "Basic NodeJS Server", 
      "builds": [ 
         { "src": "index.mjs", "use": "@vercel/node" } 
