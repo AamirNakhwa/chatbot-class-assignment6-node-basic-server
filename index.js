@@ -1,9 +1,5 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-//import multer from 'multer';
-
-//multer initialization
-//const upload = multer({ dest: 'uploads/' });
 
 const app = express();
 const port = process.env.port || 3000;
@@ -45,27 +41,6 @@ app.post('/multiple/:name', (req, res) => {
   const { name } = req.params;
   res.send(`POST request with multiple values: ${JSON.stringify(body)} and name param: ${name}`);
 });
-
-// POST request to upload a single file
-// app.post('/upload', upload.single('file'), (req, res) => {
-//   const { file } = req;
-//   console.log(file);
-//   res.send(`POST request to upload a file: ${file}`);
-// });
-
-// // POST request to upload multiple files
-// app.post('/upload-multiple', upload.array('files', 2), (req, res) => {
-//   const { files } = req;
-//   const filenames = files.map(file => file.filename);
-//   res.send(`POST request to upload multiple files: ${JSON.stringify(filenames)}`);
-// });
-
-// // POST request to upload multiple files with JSON payload
-// app.post('/upload-multiple-json', upload.array('files', 2), (req, res) => {
-//   const { files, body } = req;
-//   const filenames = files.map(file => file.filename);
-//   res.send(`POST request to upload multiple files with JSON payload: ${JSON.stringify(filenames)}, Payload: ${JSON.stringify(body)}`);
-// });
 
 // Start the server
 app.listen(port, () => {
