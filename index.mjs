@@ -44,5 +44,5 @@ app.post('/multiple/:name', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log('Server listening on port ${port}');
+  console.log(`Server listening on port ${port}`);
 });

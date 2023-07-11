@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AamirNakhwa/chatbot-class-assignment6-node-basic-server/issues"
   },
-  "homepage": "https://github.com/AamirNakhwa/chatbot-class-assignment6-node-basic-server#readme"
+  "homepage": "https://github.com/AamirNakhwa/chatbot-class-assignment6-node-basic-server#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
